@@ -1,0 +1,198 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Epic Mail | Dashboard</title>
+  <link rel="stylesheet" href="css/global.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+</head>
+<body>
+    <div id="header" class="header">
+        <div class="logo-text"><a href="#">Epic Mail</a></div>
+        <div class="logo-img"><img src="img/av1.png" alt=""></div>
+  </div>
+  <a href="#" class="mobile" id="" onclick="openToggleMenu()">open sign</a>
+  <div id="" class="container">
+      <div class="sideBar" id="toggle-menu">
+          <ul class="nav">
+              <li><a href="#" onclick="openComposeBox()"><img src="img/send1.png" class="icon-img">&nbsp;Compose</a></li>
+              <li><a href="#" onclick="openInbox()"><img src="img/inbox.png" class="icon-img">&nbsp;Inbox </a></li>
+              <li><a href="#" onclick="openSendBox()"><img src="img/draft.png" class="icon-img">&nbsp;Sent </a></li>
+              <li><a href="#" onclick="openDraftBox()"><img src="img/draft.png" class="icon-img">&nbsp;Draft </a></li>
+              <li><a href="#" onclick="openSpamBox()"><img src="img/av1.png" class="icon-img">&nbsp;Spam </a></li>
+              <li><a href="#" onclick="openDeleteBox()"><img src="img/delete.png" class="icon-img">&nbsp;Trash </a></li>
+              <li><a href="#" onclick="openSettingBox()"><img src="img/settings.png" class="icon-img">&nbsp;Settings </a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <!-- inbox content -->
+            <div class="box" id="inbox-box">
+                <div class="box-top">Inbox Messages</div>
+                <div class="box-panel">
+                    <table>
+                        <tr>
+                            <th>Select</th>
+                            <th>Subject</th>
+                            <th>Date</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>This is Andela</td>
+                            <td>25/02/2019</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Welcome to ADC</td>
+                            <td>23/02/2019</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>This is Andela</td>
+                            <td>22/02/2019</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Sent content -->
+            <div class="box" id="send-box">
+                <div class="box-top">Sent Messages</div>
+                <div class="box-panel">
+                    <table>
+                        <tr>
+                            <th>Select</th>
+                            <th>Subject</th>
+                            <th>Date</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Thanks for the mail</td>
+                            <td>25/02/2019</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Welcome to java</td>
+                            <td>23/02/2019</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>old message</td>
+                            <td>22/02/2019</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Draft content -->
+            <div class="box" id="draft-box">
+                <div class="box-top">Draft Messages</div>
+                <div class="box-panel">
+                    <table>
+                        <tr>
+                            <th>Select</th>
+                            <th>Subject</th>
+                            <th>Date</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>This is Andela</td>
+                            <td>25/02/2019</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Welcome to ADC</td>
+                            <td>23/02/2019</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>This is Andela</td>
+                            <td>22/02/2019</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Delete Box -->
+            <div class="box" id="delete-box">
+                <div class="box-top">Deleted Messages</div>
+                <div class="box-panel">
+                    <table>
+                        <tr>
+                            <th>Select</th>
+                            <th>Subject</th>
+                            <th>Date</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>This is Andela</td>
+                            <td>25/02/2019</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Welcome to ADC</td>
+                            <td>23/02/2019</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>This is Andela</td>
+                            <td>22/02/2019</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Compose content -->
+            <div class="box" id="compose-box">
+                <div class="box-top">Compose message</div>
+                <div class="box-panel">
+                    <form class="form-box">
+                        <input type="text" name="towhom" placeholder="To whom?" required="">
+                        <a href="#" class="bc-btn" onclick="bcBtn()" id="bc-btn">BC</a>
+                        <input type="text" name="bc" class="bc-hidden" id="bc-hidden" placeholder="To whom?" required="">
+                        <input type="text" name="subject" placeholder="Subject" required="">
+                        <textarea name="message" placeholder="Enter message"></textarea>
+                        <input type="submit" name="send" value="Send Message"> 
+                        <input type="submit" name="send" value="Save As Draft">
+                    </form>
+                </div>
+            </div>
+            <!-- setting box -->
+            <div class="box" id="setting-box">
+                <div class="box-top">Settings</div>
+                <div class="box-panel">
+                    <button class="setting-btn" type="submit" id="">Change Password</button>
+                    <button class="setting-btn" type="button" id="">Upload Picture</button>
+                </div>
+            </div>
+            <!-- Spam box -->
+            <div class="box" id="spam-box">
+                <div class="box-top">Spam Messages</div>
+                <div class="box-panel">
+                    <table>
+                        <tr>
+                            <th>Select</th>
+                            <th>Subject</th>
+                            <th>Date</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>This is Andela</td>
+                            <td>25/02/2019</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Welcome to ADC</td>
+                            <td>23/02/2019</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>This is Andela</td>
+                            <td>22/02/2019</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header" class="footer">
+        <div class="logo-text"></div>
+    </div>
+    <script src="js/controls.js"></script>
+</body>
+</html>

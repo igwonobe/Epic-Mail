@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Epic Mail | Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    
+</head>
+<body class="body-index">
+    <div class="box">
+        <h2>Epic Mail</h2>
+        <form>
+            <div id="login-box">
+                <div class="inputBox">
+                    <input type="text" name="username" required="">
+                    <label>Username</label>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="password" required="">
+                    <label>Password</label>
+                </div>
+                <input type="submit" name="submit" value="Login" onclick="window.location.href='dashboard.html'">
+                <a href="#" class="reg-text" onclick="createAccount()">Not Registered? Click Here</a>
+            </div>
+            
+            <div id="signup-box">
+                <div class="inputBox">
+                    <input type="text" name="fname" required="">
+                    <label>Full Name</label>
+				</div>
+				<div class="inputBox">
+					<input type="text" name="username" required="">
+					<label>Username</label>
+				</div>
+				<div class="inputBox">
+					<input type="email" name="email" required="">
+					<label>Email</label>
+				</div>
+				<div class="inputBox">
+					<input type="password" name="password" required="">
+					<label>Password</label>
+				</div>
+				<div class="inputBox">
+					<input type="password" name="password" required="">
+					<label>Re-type Password</label>
+				</div>
+				<input type="submit" name="submit" value="Sign Up">
+				<a href="#" class="reg-text" onclick="loginIn()">Have Account? Click Here</a>
+			</div>
+		</form>
+	</div>
+    <script src="js/controls.js"></script>
+</body>
+</html>
