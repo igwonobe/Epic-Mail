@@ -1,3 +1,4 @@
+@import url();
 *{
 	margin: 0;
 	padding: 0;
@@ -202,16 +203,7 @@ tr:nth-child(even){
 #setting-box{
 	display: none;
 }
-#create-group-box{
-	display: none;
-}
-#all-group-box{
-	display: none;
-}
-#delete-group-box{
-	display: none;
-}
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 550px){
 	.sideBar{
 		 width: 100%;
 		 display: none;
@@ -220,7 +212,7 @@ tr:nth-child(even){
 	 	margin-left: 0px;
 	 }
 }
-@media only screen and (min-width: 320px){
+@media only screen and (min-width: 550px){
 	a.mobile{
 		display: none;
 	}
