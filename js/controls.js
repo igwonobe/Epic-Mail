@@ -13,7 +13,7 @@ function loginIn(){
 function openToggleMenu(){
 	document.getElementById("toggle-menu").style.display="block";
 }
-
+// dashboard Controls
 function openInbox(){
 	document.getElementById("inbox-box").style.display="block";
 	document.getElementById("send-box").style.display="none";
@@ -22,6 +22,7 @@ function openInbox(){
 	document.getElementById("delete-box").style.display="none";
 	document.getElementById("spam-box").style.display="none";
 	document.getElementById("setting-box").style.display="none";
+	document.getElementById("replyMsg").style.display="none";
 }
 
 function openSendBox(){
@@ -32,6 +33,8 @@ function openSendBox(){
 	document.getElementById("delete-box").style.display="none";
 	document.getElementById("spam-box").style.display="none";
 	document.getElementById("setting-box").style.display="none";
+	document.getElementById("read-msg-box").style.display="none";
+	document.getElementById("replyMsg").style.display="none";
 }
 
 function openDraftBox(){
@@ -42,6 +45,8 @@ function openDraftBox(){
 	document.getElementById("delete-box").style.display="none";
 	document.getElementById("spam-box").style.display="none";
 	document.getElementById("setting-box").style.display="none";
+	document.getElementById("read-msg-box").style.display="none";
+	document.getElementById("replyMsg").style.display="none";
 }
 
 function openComposeBox(){
@@ -51,6 +56,8 @@ function openComposeBox(){
 	document.getElementById("delete-box").style.display="none";
 	document.getElementById("spam-box").style.display="none";
 	document.getElementById("setting-box").style.display="none";
+	document.getElementById("read-msg-box").style.display="none";
+	document.getElementById("replyMsg").style.display="none";
 }
 
 function openSpamBox(){
@@ -61,6 +68,8 @@ function openSpamBox(){
 	document.getElementById("draft-box").style.display="none";
 	document.getElementById("compose-box").style.display="none";
 	document.getElementById("setting-box").style.display="none";
+	document.getElementById("read-msg-box").style.display="none";
+	document.getElementById("replyMsg").style.display="none";
 }
 
 
@@ -72,6 +81,8 @@ function openDeleteBox(){
 	document.getElementById("compose-box").style.display="none";
 	document.getElementById("spam-box").style.display="none";
 	document.getElementById("setting-box").style.display="none";
+	document.getElementById("read-msg-box").style.display="none";
+	document.getElementById("replyMsg").style.display="none";
 }
 
 function openSettingBox(){
@@ -82,8 +93,25 @@ function openSettingBox(){
 	document.getElementById("compose-box").style.display="none";
 	document.getElementById("delete-box").style.display="none";
 	document.getElementById("spam-box").style.display="none";
+	document.getElementById("read-msg-box").style.display="none";
+	document.getElementById("replyMsg").style.display="none";
 }
 
+function readMsgBox(){
+	document.getElementById("setting-box").style.display="none";
+	document.getElementById("send-box").style.display="none";
+	document.getElementById("inbox-box").style.display="none";
+	document.getElementById("draft-box").style.display="none";
+	document.getElementById("compose-box").style.display="none";
+	document.getElementById("delete-box").style.display="none";
+	document.getElementById("spam-box").style.display="none";
+	document.getElementById("read-msg-box").style.display="block";
+	document.getElementById("replyMsg").style.display="none";
+}
+function replyMsg(){
+	document.getElementById("replyMsg").style.display="block";
+	document.getElementById("reply").value="Reply"
+}
 function bcBtn(){
 	document.getElementById('bc-hidden').style.display="block";
 }

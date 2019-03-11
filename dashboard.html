@@ -4,14 +4,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Epic Mail | Dashboard</title>
   <link rel="stylesheet" href="css/global.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <div id="header" class="header">
         <div class="logo-text"><a href="#">Epic Mail</a></div>
         <div class="logo-img"><img src="img/av1.png" alt=""></div>
   </div>
-  <a href="#" class="mobile" id="" onclick="openToggleMenu()">open sign</a>
+  <a href="#" class="mobile" id="" onclick="openToggleMenu()">Menu</a>
   <div id="" class="container">
       <div class="sideBar" id="toggle-menu">
           <ul class="nav">
@@ -37,20 +38,33 @@
                         </tr>
                         <tr>
                             <td><input type="checkbox" name=""></td>
-                            <td>This is Andela</td>
+                            <td><a href="#" onclick="readMsgBox()">This is Andela</a></td>
                             <td>25/02/2019</td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name=""></td>
-                            <td>Welcome to ADC</td>
+                            <td><a href="#">Welcome to ADC</a></td>
                             <td>23/02/2019</td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name=""></td>
-                            <td>This is Andela</td>
+                            <td><a href="#">This is Andela</a></td>
                             <td>22/02/2019</td>
                         </tr>
                     </table>
+                </div>
+            </div>
+            <!-- Read Message -->
+            <div class="box" id="read-msg-box">
+                <!-- <div class="box-top">Compose message</div> -->
+                <div class="box-panel">
+                    <div class="form-box">
+                        <input type="text" name="towhom" placeholder="sender@sender.com" disabled>
+                        <textarea name="message" placeholder="This is Andela " disabled></textarea>
+                        <textarea name="message" id="replyMsg"></textarea>
+                        <input type="submit" name="send" value="Reply Message" onclick="replyMsg()" id="git"> 
+                        <input type="submit" name="send" value="Delete">
+                    </div>
                 </div>
             </div>
             <!-- Sent content -->
