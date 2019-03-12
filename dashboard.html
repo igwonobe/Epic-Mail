@@ -6,23 +6,26 @@
   <link rel="stylesheet" href="css/global.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Marko One' rel='stylesheet'>
 </head>
 <body>
     <div id="header" class="header">
         <div class="logo-text"><a href="#">Epic Mail</a></div>
         <div class="logo-img"><img src="img/av1.png" alt=""></div>
-  </div>
+    </div>
   <a href="#" class="mobile" id="" onclick="openToggleMenu()">Menu</a>
+  <a href="#" class="mobile" id="" onclick="closeToggleMenu()">X</a>
   <div id="" class="container">
       <div class="sideBar" id="toggle-menu">
           <ul class="nav">
-              <li><a href="#" onclick="openComposeBox()"><i class="fas fa-inbox-in"></i>&nbsp;Compose</a></li>
-              <li><a href="#" onclick="openInbox()"><i class="fas fa-inbox-in"></i>&nbsp;Inbox </a></li>
-              <li><a href="#" onclick="openSendBox()"><i class="fas fa-inbox-in"></i>&nbsp;Sent </a></li>
-              <li><a href="#" onclick="openDraftBox()"><i class="fas fa-inbox-in"></i>&nbsp;Draft </a></li>
-              <li><a href="#" onclick="openSpamBox()"><i class="fas fa-inbox-in"></i>&nbsp;Spam </a></li>
-              <li><a href="#" onclick="openDeleteBox()"><i class="fas fa-inbox-in"></i>&nbsp;Trash </a></li>
-              <li><a href="#" onclick="openSettingBox()"><i class="fas fa-inbox-in"></i>&nbsp;Settings </a></li>
+              <span></span>
+              <li id="active1"><a href="#" onclick="openComposeBox()"><i class="fas fa-edit"></i>&nbsp;Compose</a></li>
+              <li id="active2"><a href="#" onclick="openInbox()"><i class="far fa-envelope-open"></i>&nbsp;Inbox </a></li>
+              <li id="active3"><a href="#" onclick="openSendBox()"><i class="far fa-share-square"></i>&nbsp;Sent </a></li>
+              <li id="active4"><a href="#" onclick="openDraftBox()"><i class="fas fa-mail-bulk"></i>&nbsp;Draft </a></li>
+              <li id="active5"><a href="#" onclick="openSpamBox()"><i class="fas fa-backspace"></i>&nbsp;Spam </a></li>
+              <li id="active6"><a href="#" onclick="openDeleteBox()"><i class="fas fa-trash-alt"></i>&nbsp;Trash </a></li>
+              <li id="active7"><a href="#" onclick="openSettingBox()"><i class="fas fa-cogs"></i>&nbsp;Settings </a></li>
             </ul>
         </div>
         <div class="content">
@@ -62,7 +65,7 @@
                         <input type="text" name="towhom" placeholder="sender@sender.com" disabled>
                         <textarea name="message" placeholder="This is Andela " disabled></textarea>
                         <textarea name="message" id="replyMsg"></textarea>
-                        <input type="submit" name="send" value="Reply Message" onclick="replyMsg()" id="git"> 
+                        <input type="submit" name="send" value="Reply Message" onclick="replyMsg()" id="reply"> 
                         <input type="submit" name="send" value="Delete">
                     </div>
                 </div>
