@@ -152,6 +152,7 @@ th,td{
 	padding: 8px;
 	color: #ffffff;
 	font-weight: bold;
+	/* border-bottom: 1px solid #ffffff; */
 }
 td,a{
 	text-decoration: none;
