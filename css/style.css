@@ -12,6 +12,33 @@ html{
 	overflow: hidden;
 }
 /*index page style*/
+.header{
+	width: 100%;
+	height: 50px;
+	/* background: rgba(0,0,0,.9);
+	box-shadow: 0 15px 25px rgba(0,0,0,.5); */
+	margin-top: 10px;
+	margin-left: 15px;
+	font-family: 'Marko One';
+	font-size: 45px;
+}
+.header a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.text-deco{
+	color: #58bcac;
+}
+.logo{
+	color: Tomato;
+}
+/* .logo-text{
+	float: center;
+	margin-top: 10px;
+	margin-left: 15px;
+	font-family: 'Marko One';
+	font-size: 15px;
+} */
 .box{
 	position: absolute;
 	top: 50%;
