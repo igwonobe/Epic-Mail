@@ -16,7 +16,9 @@ function openToggleMenu() {
 function closeToggleMenu() {
 	document.getElementById("toggle-menu").style.display = "none";
 }
+
 // dashboard Controls
+
 function openInbox() {
 	document.getElementById("inbox-box").style.display = "block";
 	document.getElementById("send-box").style.display = "none";
@@ -33,6 +35,8 @@ function openInbox() {
 	document.getElementById("active5").style.backgroundColor = "rgba(0,0,0,.9)";
 	document.getElementById("active6").style.backgroundColor = "rgba(0,0,0,.9)";
 	document.getElementById("active7").style.backgroundColor = "rgba(0,0,0,.9)";
+	document.getElementById('password-box').style.display ="none";
+	document.getElementById('upload-box').style.display ="none";
 }
 
 function openSendBox() {
@@ -52,6 +56,8 @@ function openSendBox() {
 	document.getElementById("active5").style.backgroundColor = "rgba(0,0,0,.9)";
 	document.getElementById("active6").style.backgroundColor = "rgba(0,0,0,.9)";
 	document.getElementById("active7").style.backgroundColor = "rgba(0,0,0,.9)";
+	document.getElementById('password-box').style.display ="none";
+	document.getElementById('upload-box').style.display ="none";
 }
 
 function openDraftBox() {
@@ -71,6 +77,8 @@ function openDraftBox() {
 	document.getElementById("active5").style.backgroundColor = "rgba(0,0,0,.9)";
 	document.getElementById("active6").style.backgroundColor = "rgba(0,0,0,.9)";
 	document.getElementById("active7").style.backgroundColor = "rgba(0,0,0,.9)";
+	document.getElementById('password-box').style.display ="none";
+	document.getElementById('upload-box').style.display ="none";
 }
 
 function openComposeBox() {
@@ -90,6 +98,8 @@ function openComposeBox() {
 	document.getElementById("active5").style.backgroundColor = "rgba(0,0,0,.9)";
 	document.getElementById("active6").style.backgroundColor = "rgba(0,0,0,.9)";
 	document.getElementById("active7").style.backgroundColor = "rgba(0,0,0,.9)";
+	document.getElementById('password-box').style.display ="none";
+	document.getElementById('upload-box').style.display ="none";
 }
 
 function openSpamBox() {
@@ -109,6 +119,8 @@ function openSpamBox() {
 	document.getElementById("active4").style.backgroundColor = "rgba(0,0,0,.9)";
 	document.getElementById("active6").style.backgroundColor = "rgba(0,0,0,.9)";
 	document.getElementById("active7").style.backgroundColor = "rgba(0,0,0,.9)";
+	document.getElementById('password-box').style.display ="none";
+	document.getElementById('upload-box').style.display ="none";
 }
 
 
@@ -129,6 +141,8 @@ function openDeleteBox() {
 	document.getElementById("active4").style.backgroundColor = "rgba(0,0,0,.9)";
 	document.getElementById("active5").style.backgroundColor = "rgba(0,0,0,.9)";
 	document.getElementById("active7").style.backgroundColor = "rgba(0,0,0,.9)";
+	document.getElementById('password-box').style.display ="none";
+	document.getElementById('upload-box').style.display ="none";
 }
 
 function openSettingBox() {
@@ -148,6 +162,8 @@ function openSettingBox() {
 	document.getElementById("active4").style.backgroundColor = "rgba(0,0,0,.9)";
 	document.getElementById("active5").style.backgroundColor = "rgba(0,0,0,.9)";
 	document.getElementById("active6").style.backgroundColor = "rgba(0,0,0,.9)";
+	document.getElementById('password-box').style.display ="none";
+	document.getElementById('upload-box').style.display ="none";
 }
 
 function readMsgBox() {
@@ -160,6 +176,8 @@ function readMsgBox() {
 	document.getElementById("spam-box").style.display = "none";
 	document.getElementById("read-msg-box").style.display = "block";
 	document.getElementById("replyMsg").style.display = "none";
+	document.getElementById('password-box').style.display ="none";
+	document.getElementById('upload-box').style.display ="none";
 }
 function replyMsg() {
 	document.getElementById("replyMsg").style.display = "block";
@@ -167,4 +185,12 @@ function replyMsg() {
 }
 function bcBtn() {
 	document.getElementById('bc-hidden').style.display = "block";
+}
+function changePassword(){
+	document.getElementById('password-box').style.display ="block";
+	document.getElementById('upload-box').style.display ="none";
+}
+function uploadPicture(){
+	document.getElementById('upload-box').style.display ="block";
+	document.getElementById('password-box').style.display ="none";
 }

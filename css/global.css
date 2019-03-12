@@ -11,8 +11,8 @@ body{
 	font-family: sans-serif;
 	background: url(../img/ba3.jpeg);
 	background-position: center;
-    margin: 0;
-    background-repeat: no-repeat;
+  margin: 0;
+  background-repeat: no-repeat;
 	background-size: cover;
 }
 .header{
@@ -239,12 +239,22 @@ td,a{
 #replyMsg{
 	display: none;
 }
+#password-box{
+	display: none;
+}
+#upload-box{
+	display: none;
+}
 .active{
 	width: 100%;
 	border-radius: 10px;
 }
 .text-deco{
 	color: #58bcac;
+}
+.upload-pic{
+	width: 150px;
+	border-radius: 15px;
 }
 @media only screen and (max-width: 700px){
 	.sideBar{

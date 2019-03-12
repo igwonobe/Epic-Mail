@@ -170,7 +170,7 @@
             <div class="box" id="compose-box">
                 <div class="box-top">Compose message</div>
                 <div class="box-panel">
-                    <form class="form-box">
+                    <div class="form-box">
                         <input type="text" name="towhom" placeholder="To whom?" required="">
                         <a href="#" class="bc-btn" onclick="bcBtn()" id="bc-btn">BC</a>
                         <input type="text" name="bc" class="bc-hidden" id="bc-hidden" placeholder="To whom?"
@@ -179,17 +179,40 @@
                         <textarea name="message" placeholder="Enter message"></textarea>
                         <input type="submit" name="send" value="Send Message">
                         <input type="submit" name="send" value="Save As Draft">
-                    </form>
+                    </div>
                 </div>
             </div>
             <!-- setting box -->
             <div class="box" id="setting-box">
                 <div class="box-top">Settings</div>
                 <div class="box-panel">
-                    <button class="setting-btn" type="submit" id="">Change Password</button>
-                    <button class="setting-btn" type="button" id="">Upload Picture</button>
+                    <button class="setting-btn" type="submit" id="" onclick="changePassword()">Change Password</button>
+                    <button class="setting-btn" type="button" id="" onclick="uploadPicture()">Upload Picture</button>
                 </div>
             </div>
+             <!-- Change Password content -->
+             <div class="box" id="password-box">
+                    <div class="box-panel">
+                        <div class="form-box">
+                            <input type="text" name="towhom" placeholder="Olde Password" required="">
+                            <input type="text" name="bc" placeholder="New Password" required="">
+                            <input type="text" name="bc" placeholder="Re-type New Password" required="">
+                            <input type="submit" name="send" value="Change Password">
+                            <!-- <input type="submit" name="send" value="Save As Draft"> -->
+                        </div>
+                    </div>
+                </div>
+                 <!-- Upload Picture content -->
+             <div class="box" id="upload-box">
+                    <div class="box-panel">
+                        <div class="form-box">
+                            <img src="img/avatar.jpg" class="upload-pic"><br><br>
+                            <input type="file" name="bc" placeholder="Re-type New Password" required="">
+                            <input type="submit" name="send" value="upload">
+                            <!-- <input type="submit" name="send" value="Save As Draft"> -->
+                        </div>
+                    </div>
+                </div>
             <!-- Spam box -->
             <div class="box" id="spam-box">
                 <div class="box-top">Spam Messages</div>
