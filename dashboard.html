@@ -79,16 +79,16 @@
             </div>
             <!-- Read Message -->
             <div class="box" id="read-msg-box">
-                <!-- <div class="box-top">Compose message</div> -->
-                <div class="box-panel">
                     <div class="form-box">
-                        <input type="text" name="towhom" placeholder="sender@sender.com" disabled>
-                        <textarea name="message" placeholder="This is Andela " disabled></textarea>
-                        <textarea name="message" id="replyMsg"></textarea>
-                        <input type="submit" name="send" value="Reply Message" onclick="replyMsg()" id="reply">
-                        <input type="submit" name="send" value="Delete">
-                    </div>
-                </div>
+                            <input type="text" name="towhom" placeholder="sender@sender.com" disabled>
+                            <textarea name="message" placeholder="This is Andela " disabled></textarea>
+                            <textarea name="message" id="replyMsg"></textarea>
+                            <input type="submit" name="send" value="Reply Message" onclick="replyMsg()" id="reply">
+                            <input type="submit" name="send" value="Delete">
+                        </div>
+                        <!-- <div class="box-panel">
+                    
+                        </div> -->
             </div>
             <!-- Sent content -->
             <div class="box" id="send-box">
@@ -176,23 +176,24 @@
             </div>
             <!-- Compose content -->
             <div class="box" id="compose-box">
-                <div class="box-top">Compose message</div>
-                <div class="box-panel">
-                    <div class="form-box">
+                <!-- <div class="box-top">Compose message</div> -->
+                <div class="form-box">
                         <input type="text" name="towhom" placeholder="To whom?" required="">
-                        <a href="#" class="bc-btn" onclick="bcBtn()" id="bc-btn">BC</a>
+                        <!-- <a href="#" class="bc-btn" onclick="bcBtn()" id="bc-btn">BC</a>
                         <input type="text" name="bc" class="bc-hidden" id="bc-hidden" placeholder="To whom?"
-                            required="">
+                            required=""> -->
                         <input type="text" name="subject" placeholder="Subject" required="">
                         <textarea name="message" placeholder="Enter message"></textarea>
                         <input type="submit" name="send" value="Send Message">
                         <input type="submit" name="send" value="Save As Draft">
                     </div>
-                </div>
+                <!-- <div class="box-panel">
+                   
+                </div> -->
             </div>
             <!-- setting box -->
             <div class="box" id="setting-box">
-                <div class="box-top">Settings</div>
+                <div class="box-top">Settings</div><br>
                 <div class="box-panel">
                     <button class="setting-btn" type="submit" id="" onclick="changePassword()">Change Password</button>
                     <button class="setting-btn" type="button" id="" onclick="uploadPicture()">Upload Picture</button>
@@ -200,7 +201,7 @@
             </div>
              <!-- Change Password content -->
              <div class="box" id="password-box">
-                    <div class="box-panel">
+                    <!-- <div class="box-panel"> -->
                         <div class="form-box">
                             <input type="text" name="towhom" placeholder="Old Password" required="">
                             <input type="text" name="bc" placeholder="New Password" required="">
@@ -208,7 +209,7 @@
                             <input type="submit" name="send" value="Change Password">
                             <!-- <input type="submit" name="send" value="Save As Draft"> -->
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
                  <!-- Upload Picture content -->
              <div class="box" id="upload-box">
