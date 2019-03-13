@@ -43,28 +43,36 @@
         <div class="content">
             <!-- inbox content -->
             <div class="box" id="inbox-box">
-                <div class="box-top">Inbox Messages</div>
+                <div class="box-top">Inbox <span class="inbox-del-btn"><i class="fas fa-trash-alt"></i></span></div>
                 <div class="box-panel">
                     <table>
                         <tr>
-                            <th>Select</th>
+                            <th></th>
+                            <th>Sender</th>
                             <th>Subject</th>
                             <th>Date</th>
+                            <th>time</th>
                         </tr>
-                        <tr>
+                        <tr onclick="readMsgBox()">
                             <td><input type="checkbox" name=""></td>
-                            <td><a href="#" onclick="readMsgBox()">This is Andela</a></td>
+                            <td>me@me.com</td>
+                            <td>This is Andela</td>
                             <td>25/02/2019</td>
+                            <td>7:00 PM</td>
                         </tr>
-                        <tr>
+                        <tr onclick="readMsgBox()">
                             <td><input type="checkbox" name=""></td>
-                            <td><a href="#">Welcome to ADC</a></td>
+                            <td>you@you.com</td>
+                            <td>Welcome to ADC</td>
                             <td>23/02/2019</td>
+                            <td>3:00 PM</td>
                         </tr>
-                        <tr>
+                        <tr onclick="readMsgBox()">
                             <td><input type="checkbox" name=""></td>
-                            <td><a href="#">This is Andela</a></td>
+                            <td>hi@hi.com</td>
+                            <td>This is Andela</td>
                             <td>22/02/2019</td>
+                            <td>9:00 PM</td>
                         </tr>
                     </table>
                 </div>

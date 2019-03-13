@@ -25,6 +25,7 @@ function openInbox() {
 	document.getElementById("draft-box").style.display = "none";
 	document.getElementById("compose-box").style.display = "none";
 	document.getElementById("delete-box").style.display = "none";
+	document.getElementById("read-msg-box").style.display = "none";
 	document.getElementById("spam-box").style.display = "none";
 	document.getElementById("setting-box").style.display = "none";
 	document.getElementById("replyMsg").style.display = "none";

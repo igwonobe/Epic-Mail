@@ -146,6 +146,7 @@ table{
 	width: 100%;
 	color: #ffffff;
 	font-weight: bold;
+	cursor: pointer;
 }
 th,td{
 	text-align: center;
@@ -256,6 +257,10 @@ td,a{
 .upload-pic{
 	width: 150px;
 	border-radius: 15px;
+}
+.inbox-del-btn{
+	margin-left: 25px;
+	margin-right: 100px;
 }
 @media only screen and (max-width: 700px){
 	.sideBar{
